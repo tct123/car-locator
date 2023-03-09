@@ -3,7 +3,7 @@ from random import choice
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.list import OneLineListItem
 from kivymd.uix.list import MDList
-from kivymd.uix.toolbar import MDToolbar
+from kivymd.uix.toolbar import MDTopAppBar
 from kivymd.uix.button import MDFloatingActionButton
 from kivymd.app import MDApp
 
@@ -70,7 +70,7 @@ class BlueDevicesScreen(MDScreen):
         btn_layout.add_widget(self.refresh_btn)
 
         self.container = BoxLayout(orientation='vertical')
-        self.toolbar = MDToolbar(pos_hint={'top': 1})
+        self.toolbar = MDTopAppBar(pos_hint={'top': 1})
         self.toolbar.left_action_items = [
             'chevron-left', lambda x: self.switch_screen()
         ],
