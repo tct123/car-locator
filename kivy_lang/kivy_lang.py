@@ -402,7 +402,7 @@ KV = """
                 BoxLayout:
                     orientation: 'vertical'
 
-                    MDToolbar:
+                    MDTopAppBar:
                         id: toolbar
                         title: 'Find my car'
                         elevation: 10
@@ -490,7 +490,7 @@ KV = """
                         id: mapview
                         zoom: 19
 
-                    MDToolbar:
+                    MDTopAppBar:
                         pos_hint: {'top': 1}
                         id: tb
                         elevation: 0
@@ -524,7 +524,7 @@ KV = """
 
                 MDBoxLayout:
                     orientation: 'vertical'
-                    MDToolbar:
+                    MDTopAppBar:
                         title: 'Chronology'
                         elevation: 10
                         left_action_items:
